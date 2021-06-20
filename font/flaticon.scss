@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?8659ad551cc256dfb0a60bb47e769a8d") format("truetype"),
+url("./flaticon.woff?8659ad551cc256dfb0a60bb47e769a8d") format("woff"),
+url("./flaticon.woff2?8659ad551cc256dfb0a60bb47e769a8d") format("woff2"),
+url("./flaticon.eot?8659ad551cc256dfb0a60bb47e769a8d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?8659ad551cc256dfb0a60bb47e769a8d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "bars": "\f101",
+    "coffee-cup": "\f102",
+    "cloud-computing": "\f103",
+    "layers": "\f104",
+    "edit-list": "\f105",
+    "left-quote": "\f106",
+    "smartphone": "\f107",
+    "email": "\f108",
+    "placeholder": "\f109",
+);
+
+.flaticon-bars:before {
+    content: map-get($flaticon-map, "bars");
+}
+.flaticon-coffee-cup:before {
+    content: map-get($flaticon-map, "coffee-cup");
+}
+.flaticon-cloud-computing:before {
+    content: map-get($flaticon-map, "cloud-computing");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-edit-list:before {
+    content: map-get($flaticon-map, "edit-list");
+}
+.flaticon-left-quote:before {
+    content: map-get($flaticon-map, "left-quote");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon-map, "smartphone");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
